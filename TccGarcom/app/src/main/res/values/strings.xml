@@ -1,0 +1,42 @@
+<resources>
+    <!--  Generic texts  -->
+    <string name="app_name">Plim! Waiter</string>
+
+    <!--  Splash Fragment  -->
+    <string name="txt_slogan">Plim! O toque mágico para seus pedidos!</string>
+    <string name="msg_notification_permission">
+        Permissão para notificações negada! Por favor, aceite para que você possa recebê-las.
+    </string>
+
+    <!--  Login Fragment  -->
+    <string name="txt_login_button">Entrar</string>
+    <string name="txt_email_field">Insira seu Email</string>
+    <string name="txt_password_field">Insira sua senha</string>
+
+    <!--  LoginManager Class  -->
+    <string name="msg_authenticated">Autenticado</string>
+    <string name="msg_has_empty_fields">Todos os campos devem ser preenchidos</string>
+    <string name="msg_invalid_email_format">Formato de email inválido</string>
+    <string name="msg_incorrect_login_data">Usuário ou senha incorretos</string>
+    <string name="msg_user_is_adm">Você não pode fazer login neste app com uma conta de administrador</string>
+
+    <!--  Home Fragment  -->
+    <string name="txt_view_title">Chamadas</string>
+    <string name="txt_logout_button">Sair</string>
+    <string name="txt_welcome">Olá,</string>
+    <string name="txt_linked_sections">Você está atribuído ao(s) setor(es):</string>
+
+    <!--  Home Adapter  -->
+    <string name="txt_table">Mesa</string>
+    <string name="txt_calling">- Chamando</string>
+
+    <string name="alert_dialog_title">Confirmação</string>
+    <string name="alert_dialog_body">Assumir atendimento da mesa </string>
+    <string name="alert_dialog_positive_button">Sim</string>
+    <string name="alert_dialog_negative_button">Cancelar</string>
+    <string name="msg_alert_dialog_confirm">Confirmado</string>
+
+    <!--  Notification Class  -->
+    <string name="notification_title">Solicitação de atendimento</string>
+
+</resources>

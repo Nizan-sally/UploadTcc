@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela"
+    tools:context=".views.fragments.SignUpFragment">
+
+
+    <ImageView
+        android:id="@+id/imageViewFundoBox"
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fundo_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageViewFundoRegistrar"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/fundo_gerenciar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFundoBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/text_view_registro"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoRegistrar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoRegistrar"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoRegistrar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFundoRegistrar"
+        app:layout_constraintVertical_bias="0.433" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayoutEmail"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@drawable/email_input"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFundoBox"
+        app:layout_constraintVertical_bias="0.298">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:hint="@string/text_input_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayoutName"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/email_input"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toTopOf="@+id/txtInputLayoutEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:hint="@string/text_input_name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/password_input"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutEmail"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/text_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:hint="@string/pass_input"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutRePass"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/password_input"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/text_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputRePass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:hint="@string/confirm_pass_input"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonSave"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/fundo_botao_login"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFundoBox"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <TextView
+        android:id="@+id/textViewRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_registrar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonSave"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonSave"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonSave"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonSave" />
+
+    <TextView
+        android:id="@+id/textViewMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/txt_possuir"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSave" />
+
+    <TextView
+        android:id="@+id/textViewEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/txt_entrar"
+        android:textColor="@color/link_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewMsg"
+        app:layout_constraintTop_toTopOf="@+id/textViewMsg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

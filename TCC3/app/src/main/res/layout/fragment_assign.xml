@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela"
+    tools:context=".views.fragments.AssignFragment">
+
+    <ImageView
+        android:id="@+id/imageViewFundoBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fundo_box"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewGarcom"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="517dp"
+        android:src="@drawable/fundo_setores"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFundoBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewGarcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/txt_garcom"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewGarcom"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGarcom"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGarcom"
+        app:layout_constraintTop_toTopOf="@+id/imageViewGarcom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewNavbar"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fundo_navbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imgButtonHome"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="@drawable/icon_home"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNavbar"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNavbar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNavbar" />
+
+    <ImageButton
+        android:id="@+id/imgButtonStatus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icon_status"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNavbar"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNavbar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNavbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgButtonLogs"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/icon_logs"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNavbar"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNavbar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNavbar"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_status"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonStatus"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonStatus"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonStatus" />
+
+    <TextView
+        android:id="@+id/textViewLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_registros"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonLogs"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonLogs"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonLogs" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectionsToWaitersRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveChanges"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewGarcom" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:text="Salvar mudanças"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

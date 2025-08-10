@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Plim! Adm</string>
+
+    <!--  Splash Fragment  -->
+    <string name="slogan">Plim! O toque mágico para seus pedidos!</string>
+
+    <!-- SignIn Fragment  -->
+    <string name="txt_login">Entrar</string>
+    <string name="pass_input">Insira sua senha</string>
+    <string name="confirm_pass_input">Confirme sua senha</string>
+    <string name="txt_no_account">Ainda não possui uma conta?</string>
+    <string name="txt_forgot_password">Esqueceu sua senha?</string>
+    <string name="txt_sign_up">Inscreva-se</string>
+    <string name="msg_authenticated">Autenticado</string>
+    <string name="msg_forgot_password">Preencha o campo email</string>
+    <string name="msg_empty_fields">Preencha todas as informações</string>
+    <string name="msg_wrong_password">Usuário ou senha incorretos</string>
+    <string name="msg_check_your_email">Verifique sua caixa de email</string>
+    <string name="msg_user_do_not_have_permission">Usuário não tem permissão de administrador</string>
+
+    <!-- Registrar Fragment -->
+    <string name="text_view_registro">Registro</string>
+    <string name="text_input_email">Insira seu Email</string>
+    <string name="text_input_name">Insira seu nome</string>
+    <string name="waiter_pass_input">Insira uma senha</string>
+    <string name="waiter_confirm_pass_input">Confirme a senha</string>
+    <string name="btn_registrar">Criar conta</string>
+    <string name="txt_possuir">Já possui uma conta?</string>
+    <string name="txt_entrar">Entrar</string>
+    <string name="msg_registrado">Registrado</string>
+
+    <!--  Home Fragment  -->
+    <string name="txt_garcons">Garçons</string>
+    <string name="txt_ger_garcom">Gerenciar garçom</string>
+    <string name="txt_mesas">Mesas</string>
+    <string name="txt_mesas_setores">Mesas e setores</string>
+    <string name="txt_atribuir">Atribuir</string>
+    <string name="txt_atribuir_gar">Atribuir garçom</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_registros">Registros</string>
+    <string name="txt_logout">Sair</string>
+
+    <!--  Setores Fragment  -->
+    <string name="txt_adicionar">Adicionar</string>
+    <string name="txt_setores">Setores</string>
+    <string name="txt_setor">Setor</string>
+    <string name="txt_qtd_mesas">Quantidade de mesas:</string>
+
+    <!--  Gerenciar Fragment  -->
+    <string name="txt_gerenciar">Gerenciar</string>
+    <string name="msg_senhas_diferentes">As senhas não coincidem</string>
+    <string name="msg_garcom_deletado">O registro foi deletado</string>
+    <string name="msg_garcom_atualizado">O registro foi atualizado</string>
+
+    <!--  Atribuir Fragment  -->
+    <string name="txt_garcom">Garçom</string>
+
+    <!--  Logs Fragment  -->
+    <string name="txt_chamada">Chamada</string>
+    <string name="txt_atendida">Atendida</string>
+    <string name="txt_mesa">Mesa</string>
+
+    <!-- AddGarcom Popup Fragment -->
+    <string name="msg_garcom_cadastrado">Garçom adicionado</string>
+    <string name="txt_add_garcom">Insira os dados de login do garçom</string>
+    <string name="txt_concluido">Concluído</string>
+    <string name="txt_email_garcom">Email do garçom</string>
+    <string name="txt_nome_garcom">Nome do garçom</string>
+    <string name="txt_senha_garcom">Senha do garçom</string>
+    <string name="msg_invalid_email">Formato do email inválido</string>
+
+    <!--  AddSetor Popup Fragment  -->
+    <string name="txt_nome_setor">Nome do setor*:</string>
+    <string name="txt_insira_nome_setor">Insira o nome do setor</string>
+    <string name="txt_desc_mesas_setores">Mesas que fazem parte desse setor*:</string>
+    <string name="txt_salvar">Salvar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

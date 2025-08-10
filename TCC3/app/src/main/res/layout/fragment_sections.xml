@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela"
+    tools:context=".views.fragments.SectionsFragment">
+
+
+    <ImageView
+        android:id="@+id/imageViewFundoBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fundo_box"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgButtonAdicionar"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_adicionar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFundoBox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtViewAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/txt_adicionar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgButtonAdicionar"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonAdicionar"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonAdicionar"
+        app:layout_constraintTop_toTopOf="@+id/imgButtonAdicionar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgViewSetores"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fundo_setores"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFundoBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFundoBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtViewSetores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/txt_setores"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewSetores"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewSetores"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imgViewSetores"
+        app:layout_constraintTop_toTopOf="@+id/imgViewSetores"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewQtdMesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/txt_qtd_mesas"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewSetores"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/imgViewSetores"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewSetores" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectionsRecyclerView"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgButtonAdicionar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFundoBox"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFundoBox"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQtdMesas" />
+
+    <EditText
+        android:id="@+id/editTextTotalTables"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewQtdMesas"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewSetores" />
+
+    <ImageView
+        android:id="@+id/imageViewNavbar"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fundo_navbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imgButtonHome"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="@drawable/icon_home"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNavbar"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNavbar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNavbar" />
+
+    <ImageButton
+        android:id="@+id/imgButtonStatus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icon_status"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNavbar"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNavbar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNavbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgButtonLogs"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/icon_logs"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNavbar"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNavbar"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="@+id/imageViewNavbar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNavbar"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_status"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonStatus"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonStatus"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonStatus" />
+
+    <TextView
+        android:id="@+id/textViewLogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_registros"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonLogs"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonLogs"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonLogs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "703497813376",
+    "firebase_url": "https://tcc3-50b8b-default-rtdb.firebaseio.com",
+    "project_id": "tcc3-50b8b",
+    "storage_bucket": "tcc3-50b8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703497813376:android:0eadf1c05ed32064a9d565",
+        "android_client_info": {
+          "package_name": "com.example.tcc3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBayo1CX7R8R9jCzP2wQtsaQgY7KzpIdvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703497813376:android:be23b98356a9676aa9d565",
+        "android_client_info": {
+          "package_name": "com.example.tccgarcom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBayo1CX7R8R9jCzP2wQtsaQgY7KzpIdvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
