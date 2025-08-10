@@ -4,5 +4,4 @@
 
 <p align="center">
   <img height="120" src="https://i.imgur.com/BObVaic.png" alt="App Screenshot 1" />
-  <img height="120" src="https://i.imgur.com/btxgPhz.png" alt="App Screenshot 2" />
 </p>
